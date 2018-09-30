@@ -2,14 +2,18 @@
 
 * {
 	box-sizing: border-box;
+	margin: 0 auto;
+
 }
 
 body {
 	margin: 0 auto;
+	
 	padding: 0;
 	text-align: center;
 	font-family: "Merriweather", sans-serif;
 	background-color: #fff;
+
 }
 
 header {
@@ -20,3 +24,14 @@ h1{
 	color: #fff;
 	padding: 20px 0;
 }
+
+label,
+p{
+	color: darkgrey;
+}
+
+.container{
+	width: 95%;
+}
+
+/*Next steps research commen css class name and stayl the uper part of the header*/

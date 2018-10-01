@@ -1,4 +1,4 @@
-/*Base Layout*/
+/*=======Base Layout==========*/
 
 * {
 	box-sizing: border-box;
@@ -10,11 +10,30 @@ body {
 	margin: 0 auto;
 	
 	padding: 0;
-	text-align: center;
+	
 	font-family: "Merriweather", sans-serif;
 	background-color: #fff;
 
 }
+
+label,
+p{
+	color: darkgrey;
+}
+
+p{
+	display: inline-block;
+}
+
+header,
+.banner{
+	text-align: center;
+}
+
+/*========Stayl layout ========*/
+
+/*header*/
+
 
 header {
 	background-color: #000;
@@ -23,15 +42,137 @@ header {
 h1{
 	color: #fff;
 	padding: 20px 0;
+	text-transform: uppercase;
 }
 
-label,
-p{
-	color: darkgrey;
+hr{
+	margin: 5px 0 30px;
+	color: black;
+	height: 2px
 }
+
+/*==main content layout====*/
+
 
 .container{
 	width: 95%;
+	
 }
 
-/*Next steps research commen css class name and stayl the uper part of the header*/
+
+/*banner*/
+
+h2 {
+	margin-top: 20px;
+}
+
+.banner p {
+	padding: 30px 20px;
+	border-bottom: 4px solid black;
+}
+
+.banner p:after {
+	border-bottom: 5px solid red;
+}
+
+/*Form*/
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+fieldset {
+	border: none;
+	
+}
+
+legend{
+	font-size: 1.2em;
+	font-weight: bold;
+	align-items: flex-start;	
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+#state {
+	height: 40px;
+	width: 100%;
+	background-color: #ededed;
+	border:none;
+	border-radius: 2px;
+	font-size: 16px;
+	margin: 7px 0 20px;
+}
+
+
+#zip{
+	width: 35%;
+}
+
+
+/*======second Fieldset=============*/
+
+input[type="radio"],
+input[type="checkbox"]{
+	margin: 8px 0;
+}
+
+
+
+textarea{
+	width: 100%;
+	height: 120px;
+	border:none;
+	background-color: #ededed;
+	border-radius: 2px;
+	box-shadow: inset 0px 0px 0px 2px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+
+
+/*======button=======*/
+
+
+button{
+	width: 100%;
+	height:40px;
+	color: #ffffff;
+	background-color: #45b2ac;
+	border:none;
+	border-radius: 2px; 
+}
+
+/*first fieldset is semi finish look good in mobil but not in with screen  */
+
+
+/*======Media Queri=======*/
+
+
+@media (min-width: ){
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

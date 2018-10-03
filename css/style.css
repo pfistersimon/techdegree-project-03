@@ -70,10 +70,6 @@ h2 {
 	border-bottom: 4px solid black;
 }
 
-.banner p:after {
-	border-bottom: 5px solid red;
-}
-
 
 /*end banner*/
 
@@ -116,6 +112,7 @@ select,
 }
 
 
+
 #zip{
 	width: 35%;
 }
@@ -136,6 +133,7 @@ select,
 input[type="radio"],
 input[type="checkbox"]{
 	margin: 9px 0;
+
 }
 
 
@@ -194,7 +192,15 @@ footer {
 /*======Media Queri=======*/
 
 
-@media (min-width: ){
+@media (min-width: 768px){
+
+.container {
+	max-width: 600px;
+}
+
+.second {
+	margin: 0 auto;
+}
 	
 }
 

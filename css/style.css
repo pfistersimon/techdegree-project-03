@@ -10,7 +10,7 @@ body {
 	margin: 0 auto;
 	padding: 0;
 	font-family: "Merriweather", sans-serif;
-	background-color: #fff;
+	background-color: #f5f5f5;
 
 }
 
@@ -22,6 +22,7 @@ p{
 p{
 	display: inline-block;
 }
+
 
 header,
 .banner,
@@ -55,6 +56,7 @@ hr{
 
 .container{
 	width: 95%;
+	background-color: #fff;
 	
 }
 
@@ -75,9 +77,9 @@ h2 {
 
 /*Form*/
 
-fieldset {
+/*fieldset {
 	border: none;
-	}
+	}*/
 	
 
 
@@ -96,6 +98,7 @@ legend{
 input[type="text"],
 input[type="email"],
 input[type="number"],
+input[type="tel"],
 select,
 #state {
 	height: 40px;
@@ -190,12 +193,55 @@ footer {
 @media (min-width: 768px){
 
 .container {
-	max-width: 600px;
+	max-width: 768px;
 }
 
-.second {
-	margin: 0 auto;
+/*banner*/
+.banner p {
+	width: 100%;
 }
+
+/*form*/
+
+/*fieldset first*/
+
+
+
+.first {
+	display: inline;
+	min-width: 768px;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+select,
+#state {
+	align-content: center;
+	width: 75%;
+	float:right;
+	display: inline-block;
+	clear: both;
+	align-items: right;
+}
+
+
+#zip{
+	width: 25%;
+	margin-right: 370px;
+
+}
+
+.first label{
+	display: inline-block;
+	float: left;
+	clear: both;
+	width: 35%;
+	
+}
+
 	
 }
 

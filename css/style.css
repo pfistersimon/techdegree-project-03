@@ -10,7 +10,7 @@ body {
 	margin: 0 auto;
 	padding: 0;
 	font-family: "Merriweather", sans-serif;
-	background-color: #f5f5f5;
+	background-color: #fff;
 
 }
 
@@ -56,7 +56,7 @@ hr{
 
 .container{
 	width: 95%;
-	background-color: #fff;
+	background-color: #f5f5f5;
 	
 }
 
@@ -78,9 +78,9 @@ h2 {
 
 /*Form*/
 
-/*fieldset {
+fieldset {
 	border: none;
-	}*/
+	}
 	
 
 
@@ -92,9 +92,12 @@ legend{
 	margin-bottom: 15px;
 }
 
+
 /*fliedset one*/
 
-
+label{
+	cursor: pointer;
+}
 
 input[type="text"],
 input[type="email"],
@@ -109,12 +112,29 @@ select,
 	border-radius: 2px;
 	font-size: 16px;
 	margin: 7px 0 20px;
+	cursor: pointer;
 }
 
-/*input::focus {
-	border-color: yellow;
-} 
-*/
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus{
+	background-color: lightblue;
+	border: 1px solid black;
+
+
+}
+
+input::placeholder{
+	color:lightgrey;
+	font-style: italic;
+	text-align: right;
+	padding-right: 4px;
+}
+
+
 
 #zip{
 	width: 35%;
@@ -136,6 +156,7 @@ select,
 input[type="radio"],
 input[type="checkbox"]{
 	margin: 9px 0;
+	cursor: pointer;
 
 }
 
@@ -158,9 +179,10 @@ textarea{
 	background-color: #ededed;
 	border-radius: 2px;
 	box-shadow: inset 0px 0px 0px 2px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
 }
 
-/*placeholder*/
+
 
 
 
@@ -175,9 +197,9 @@ button{
 	background-color: #45b2ac;
 	border:none;
 	border-radius: 2px; 
+	cursor: pointer;
 }
 
-/*first fieldset is semi finish look good in mobil but not in with screen  */
 
 
 /*=======footer===========*/
@@ -185,10 +207,6 @@ button{
 footer {
 	padding: 20px 0;
 }
-
-
-
-
 
 
 
@@ -212,28 +230,29 @@ footer {
 
 
 
-fieldset {
+.contact-items {
 	display: flex;
-	flex-direction: column;
+}
 
+.contact-items input,
+.contact-items select {
+	margin: 10px 0 !important;
+	flex: 1 400px;
 
 }
 
-.first div {
-	display: flex;
+.contact-items label {
+	flex: 1 150px;
+	max-width: 150px;
+	margin: auto 0;
+}
+
+#zip  {
+	max-width: 25%;
+}
+
+
 	
-}
-
-.fist input {
-	align-content: flex-end;
-}
-
-.first label {
-	align-content: flex-start;
-}
-
-
-
 }
 
 

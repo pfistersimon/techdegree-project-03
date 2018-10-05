@@ -113,7 +113,7 @@ select,
 	font-size: 16px;
 	margin: 7px 0 20px;
 	cursor: pointer;
-	transition: height background-color .7s, ease-in-out;
+	transition: height .4s ease-in-out, background-color .7s ease-in-out;
 }
 
 input[type="text"]:focus,
@@ -182,7 +182,7 @@ textarea{
 	border-radius: 2px;
 	box-shadow: inset 0px 0px 0px 2px rgba(0, 0, 0, 0.3);
 	cursor: pointer;
-	transition: height background-color .7s, ease-in-out;
+	transition: height .4s ease-in-out, background-color .7s ease-in-out;
 }
 
 textarea:focus {

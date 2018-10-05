@@ -113,19 +113,22 @@ select,
 	font-size: 16px;
 	margin: 7px 0 20px;
 	cursor: pointer;
+	transition: width height .4s easy-in-out;
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="number"]:focus,
 input[type="tel"]:focus,
-select:focus,
-textarea:focus{
+select:focus {
 	background-color: lightblue;
-	border: 1px solid black;
-
+	border: 2px solid black;
+	width: 105%;
+	height: 45px;
 
 }
+
+
 
 input::placeholder{
 	color:lightgrey;
@@ -172,7 +175,7 @@ input[type="checkbox"]{
 }
 
 textarea{
-	width: 100%;
+	width: 97%;
 	height: 120px;
 	padding-top:  5px;
 	border:none;
@@ -180,8 +183,16 @@ textarea{
 	border-radius: 2px;
 	box-shadow: inset 0px 0px 0px 2px rgba(0, 0, 0, 0.3);
 	cursor: pointer;
+	transition: width height .4s easy-in-out;
 }
 
+textarea:focus {
+	background-color: lightblue;
+	border: 1px solid black;
+	width: 100%;
+	height: 150px;
+
+}
 
 
 
